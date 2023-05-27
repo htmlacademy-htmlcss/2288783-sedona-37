@@ -20,7 +20,7 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navihation-user">
+        <ul class="navigation-user">
           <li class="navigation-user-item">
             <a class="navigation-link-user" href="#">Поиск</a>
           </li>
@@ -34,6 +34,95 @@
       </nav>
     </header>
     <main class="main-catalog">
+      <section class="filter-content">
+        <div class="filter-heder">
+          <h1 class="filter-title">Гостиницы Седоны</h1>
+          <ul class="breadcrubs">
+            <li class="breadcrubs-item">
+              <div class="bredcrubs-house"></div>
+            </li>
+            <li class="breadcrubs-item">
+              <div class="bredcrubs-arrow"></div>
+            </li>
+            <li class="breadcrubs-item">
+              <span>Главная</span>
+            </li>
+          </ul>
+        </div>
+        <div class="filters">
+          <form class="left-form">
+            <fieldset class="infrastructure">
+              <span class="infrastructure-title">Инфраструктура:</span>
+              <ul class="infrastructure">
+                <li class="infrastructure-item">
+                  <input class="checkbox" type="checkbox" id="checkbox-1">
+                  <label class="infrastructure-label" for="checkbox-1">Бассейн</label>
+                </li>
+                <li class="infrastructure-item">
+                  <input class="checkbox" type="checkbox" id="checkbox-2">
+                  <label class="infrastructure-label" for="checkbox-2">Парковка</label>
+                </li>
+                <li class="infrastructure-item">
+                  <input class="checkbox" type="checkbox" id="checkbox-3">
+                  <label class="infrastructure-label" for="checkbox-3">Wi-Fi</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="housetype">
+              <span class="housetype-title">Тип жилья:</span>
+              <ul class="housetype-list">
+                <li class="housetype-item">
+                  <label class="housetype-label">
+                    <input class="input-radio" type="radio" value="hotel" name="house" checked>
+                    <span class="radio-text">Гостиница</span>
+                  </label>
+                </li>
+                <li class="housetype-item">
+                  <label class="housetype-label">
+                    <input class="input-radio" type="radio" value="motel" name="house">
+                    <span class="radio-text">Мотель</span>
+                  </label>
+                </li>
+                <li class="housetype-item">
+                  <label class="housetype-label">
+                    <input class="input-radio" type="radio" value="appartment" name="house">
+                    <span class="radio-text">Апартаменты</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
+          <form class="right-form">
+            <fieldset class="form-price">
+              <div class="price">
+                <span>Стоимость, ₽:</span>
+                <div class="minmax-price">
+                  <div>
+                  <label class="price-imput-min" for="min-price">от</label>
+                  <input class="control-input-min" type="number" name="min-price" value="0" id="min-price">
+                  </div>
+                  <div>
+                  <label class="price-imput-max" for="max-price">до</label>
+                  <input class="control-input-max" type="number" name="max-price" value="9000" id="max-price">
+                  </div>
+                </div>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar">
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </section>
 
     </main>
 
