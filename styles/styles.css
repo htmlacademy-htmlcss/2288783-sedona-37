@@ -903,6 +903,7 @@ body {
   text-decoration: none;
   border-radius: 4px;
   margin-right: 8px;
+  cursor:pointer;
 }
 
 .pagination-a {
