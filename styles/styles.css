@@ -54,7 +54,8 @@ body {
 
 .main-navigation {
   display: flex;
-  padding: 0 70px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .navigation-link {
@@ -64,19 +65,23 @@ body {
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
   text-align: center;
-  padding-right: 32px;
+  padding: 20px 16px 20px 16px;
 }
 
 .navigation-list {
   list-style-type: none;
   display: flex;
+  padding-inline-start:0;
   padding-left: 184px;
 }
 
 .navigation-user {
   list-style-type: none;
   display: flex;
+  margin: 0;
+  padding-left: 270px;
 }
+
 
 .navigation-logo {
   position: absolute;
@@ -86,11 +91,58 @@ body {
 
 .navigation-link-search {
   background-image: url("../images/icons/search.svg");
-  background-size: contain;
+  width: 44px;
+  height: 64px;
+  background-position: center;
   background-repeat: no-repeat;
+  display:block;
+  cursor:pointer;
 }
 
-.number {}
+.navigation-link-favourites {
+  background-image: url("../images/icons/heart.svg");
+  width: 44px;
+  height: 64px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  text-decoration: none;
+  padding-left: 22px;
+  padding-top: 10px;
+  cursor:pointer;
+}
+
+.number {
+  border-radius: 50%;
+  background-color: rgba(125, 181, 79, 1);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  color: rgba(255, 255, 255, 1);
+  padding: 4px;
+  text-align: right;
+}
+
+.navigation-link-button {
+  width: 160px;
+  height: 36px;
+  background: rgba(117, 97, 87, 1);
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 8px 34px;
+  margin-bottom: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 10px;
+  display: block;
+  margin-top: 14px;
+  cursor:pointer;
+}
+
 
 /*    HERO    */
 
@@ -178,6 +230,19 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.advantages-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin-left: 80px;
+  margin-top: 30px;
+}
+
+.advantages-title-image::after {
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
 .advantages-text {
@@ -271,7 +336,7 @@ body {
   text-align: center;
   padding: 8px 50px;
   border-color: transparent;
-
+  cursor:pointer;
 }
 
 /*  MAIL BLOCK  */
@@ -330,6 +395,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   padding: 8px 50px 8px 50px;
+  cursor:pointer;
 }
 
 .mail-catalog {
@@ -364,18 +430,16 @@ body {
 .page-footer {
   display: flex;
   justify-content: space-between;
-  padding-left: 60px;
-  padding-right: 70px;
-  padding-top: 45px;
-  padding-bottom: 35px;
+  padding:45px 70px 30px 70px;
 }
 
 .footer-social-list {
   display: grid;
   list-style-type: none;
   grid-template-columns: 24px 24px 24px;
-  grid-template-rows: 40px;
   gap: 10px;
+  padding-inline-start: 0;
+
 }
 
 .contact-phone {
@@ -386,6 +450,7 @@ body {
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
   text-transform: uppercase;
+  cursor:pointer;
 }
 
 /*                           КАТАЛОГ                                                 */
@@ -412,11 +477,13 @@ body {
 }
 
 .filters {
-  display: flex;
+  display: grid;
+  grid-template-columns: 150px 150px 288px 191px;
+  column-gap: 70px;
   padding-left: 70px;
-  padding-top: 40px;
   padding-right: 70px;
-  padding-bottom: 73px;
+  padding-top: 40px;
+  padding-bottom: 70px;
 }
 
 .filter-header {
@@ -438,12 +505,27 @@ body {
 }
 
 .bredcrubs-house {
+  display: block;
   background-image: url("../images/icons/bred-house.svg");
   width: 12px;
-  height: 12px;
+  height: 21px;
   background-repeat: no-repeat;
   background-position: center;
+  margin-right: 24px;
+  cursor:pointer;
 }
+
+.bredcrubs-house::after {
+  content:url("../images/icons/bred-arrow.svg");
+  display: block;
+  width: 8px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 20px;
+}
+
+
 
 .infrastructure-title {
   font-weight: 700;
@@ -452,9 +534,10 @@ body {
 }
 
 .infrastructure {
+  display: grid;
   list-style-type: none;
   border-color: transparent;
-  padding-left: 0;
+  padding: 0;
 }
 
 .infrastructure-item {
@@ -464,13 +547,14 @@ body {
 }
 
 .housetype {
+  display: grid;
   border-color: transparent;
-  padding-left: 70px;
+  padding: 0;
 }
 
 .housetype-list {
   list-style-type: none;
-  padding-left: 0;
+  padding: 0;
 }
 
 .housetype-title {
@@ -485,6 +569,32 @@ body {
   line-height: 23px;
 }
 
+.minmax-price {
+  display: flex;
+  padding-bottom:48px;
+}
+
+.control-input-min {
+  width: 143px;
+  height: 48px;
+  border-radius: 4px 0 0 4px;
+  border-color: transparent;
+  margin-right: 2px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.control-input-max {
+  width: 143px;
+  height: 48px;
+  border-radius: 0 4px 4px 0;
+  border-color: transparent;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
 .price-text {
   font-weight: 700;
   font-size: 20px;
@@ -493,11 +603,14 @@ body {
 
 .form-price {
   border-color: transparent;
-  padding-left: 150px;
+}
+
+.range-bar {
+  width:287px;
 }
 
 .price-buttons {
-  display: flex;
+  display:grid;
   flex-direction: column;
   border-color: transparent;
   padding-top: 32px;
@@ -515,7 +628,7 @@ body {
   padding: 8px 50px 8px 50px;
   border-radius: 4px;
   margin-bottom: 40px;
-
+  cursor:pointer;
 }
 
 .price-button-reset {
@@ -527,7 +640,7 @@ body {
   text-align: center;
   background-color: transparent;
   border-color: transparent;
-
+  cursor:pointer;
 }
 
 /*  SORTING  */
@@ -597,9 +710,6 @@ body {
   border: solid 1px;
   border-color: rgba(230, 230, 230, 1);
   padding: 20px;
-}
-
-.card-description {
   display: grid;
   grid-template-columns: 140px 140px;
   row-gap: 16px;
@@ -655,6 +765,7 @@ body {
   padding-bottom: 8px;
   border-color: transparent;
   width: 140px;
+  cursor:pointer;
 }
 
 .hotel-button-favorites {
@@ -677,6 +788,7 @@ body {
   width: 140px;
   padding-top: 8px;
   padding-bottom: 8px;
+  cursor:pointer;
 }
 
 .hotel-button-active {
@@ -755,26 +867,26 @@ body {
   border-color: transparent;
 }
 
-.divider {
-  content: "";
-  width: 1060px;
-  margin-left: 70px;
-  margin-right: 70px;
-  margin-bottom: 40px;
-  margin-top: 40px;
-  border: 1px solid rgba(230, 230, 230, 1);
-
-}
 
 /* PAGINATION */
 
 .pagination {
-  padding-left: 30px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 40px;
+}
+.pagination::before {
+  content: "";
+  display: block;
+  width: 1060px;
+  border-bottom: 1px solid rgba(230, 230, 230, 1);
 }
 
 .pagination-list {
   list-style-type: none;
   display: flex;
+  padding-left: 0;
+  padding-top: 40px;
 }
 
 .pagination-link-button {
