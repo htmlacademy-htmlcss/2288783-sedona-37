@@ -22,7 +22,7 @@
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-list-item">
-              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-user">
@@ -62,14 +62,17 @@
               <ul class="infrastructure">
                 <li class="infrastructure-item">
                   <input class="checkbox" type="checkbox" id="checkbox-pool">
+                  <span class="custom-checkbox"></span>
                   <label class="infrastructure-label" for="checkbox-pool">Бассейн</label>
                 </li>
                 <li class="infrastructure-item">
                   <input class="checkbox" type="checkbox" id="checkbox-parking">
+                  <span class="custom-checkbox"></span>
                   <label class="infrastructure-label" for="checkbox-parking">Парковка</label>
                 </li>
                 <li class="infrastructure-item">
                   <input class="checkbox" type="checkbox" id="checkbox-wifi">
+                  <span class="custom-checkbox"></span>
                   <label class="infrastructure-label" for="checkbox-wifi">Wi-Fi</label>
                 </li>
               </ul>
@@ -79,31 +82,46 @@
               <ul class="housetype-list">
                 <li class="housetype-item">
                   <input class="input-radio" type="radio" value="hotel" name="house" id="input-hotel" checked>
+                  <span class="custom-radio"></span>
                   <label class="housetype-label" for="input-hotel">Гостиница</label>
                 </li>
                 <li class="housetype-item">
                   <input class="input-radio" type="radio" value="motel" name="house" id="input-motel">
+                  <span class="custom-radio"></span>
                   <label class="housetype-label" for="input-motel">Мотель</label>
                 </li>
                 <li class="housetype-item">
                   <input class="input-radio" type="radio" value="appartment" name="house" id="input-appartment">
+                  <span class="custom-radio"></span>
                   <label class="housetype-label" for="input-appartment">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
+            <fieldset class="space"></fieldset>
             <fieldset class="form-price">
               <legend class="price-text">Стоимость, ₽:</legend>
               <div class="minmax-price">
                 <div class="price-min">
-                  <label class="price-input-min" for="min-price"></label>
+                  <label class="price-input-min" for="min-price">от</label>
                   <input class="control-input-min" type="number" name="min-price" value="0" id="min-price">
                 </div>
                 <div class="price-max">
-                  <label class="price-input-max" for="max-price"></label>
+                  <label class="price-input-max" for="max-price">до</label>
                   <input class="control-input-max" type="number" name="max-price" value="9000" id="max-price">
                 </div>
               </div>
-              <input class="range-bar" type="range">
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar">
+                    <button class="range-toggle toggle-min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="price-buttons">
               <button class="price-button-acept" type="submit">Применить</button>
@@ -239,7 +257,7 @@
           <form class="mail-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="form-label visually-hidden" for="mail-post">Ваш e-mail</label>
             <input class="mail-input" type="text" id="mail-post" name="mail-post" placeholder="Ваш e-mail" required>
-            <button class="button-big button-mail" type="submit">Подписаться</button>
+            <button class="button-mail" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
