@@ -16,7 +16,7 @@
           </a>
           <ul class="navigation-list">
             <li class="navigation-list-item">
-              <a class="navigation-link" href="index.html">Главная</a>
+              <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
             </li>
             <li class="navigation-list-item">
               <a class="navigation-link" href="#">О Седоне</a>
@@ -129,21 +129,18 @@
       <footer class="page-footer">
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="social-list-link" href="https://vk.com/htmlacademy">
+            <a class="social-list-vk" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Вконтакте</span>
-              <img src="images/icons/vk.svg" width="24" height="14" alt="Вконтакте.">
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="social-list-link" href="https://t.me/htmlacademy">
+            <a class="social-list-telegram footer-social-link" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Telegram</span>
-              <img src="images/icons/telegram.svg" width="18" height="15" alt="телеграм.">
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="social-list-link" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="social-list-youtube" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Youtube</span>
-              <img src="images/icons/youtube.svg" width="22" height="17" alt="Youtube.">
             </a>
           </li>
         </ul>
@@ -153,6 +150,56 @@
           <span class="visually-hidden">сайт HTML Academy</span>
         </a>
       </footer>
+    </div>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-search">
+        <div class="modal-heder">
+          <h2 class="modal-title">Поиск гостинницы в Седоне</h2>
+          <button class="modal-close-button" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+        </div>
+        <section class="modal-content">
+          <ul class="modal-list">
+            <li class="modal-item">
+              <label class="date-start" for="start">Дата заезда:</label>
+              <input class="modal-input-date" type="date" id="start" name="trip-start" min="2018-01-01" max="2018-12-31"
+                value="2020-04-27" required>
+              <span class="date-error1">Мы не можем отправить вас в прошлое</span>
+            </li>
+            <li class="modal-item">
+              <label class="date-end" for="end">Дата выезда:</label>
+              <input class="modal-input-date" type="date" id="end" name="trip-end" min="2018-01-01" max="2018-12-31"
+                value="2021-09-01" required>
+              <span class="date-error2">На эти даты есть свободные номера. Пока есть.</span>
+            </li>
+            <li class="modal-item">
+              <form class="window" action="https://echo.htmlacademy.ru">
+                <label class="parent-label" for="parent">Взрослые:</label>
+                <input class="minus" type="button" value="">
+                <input class="modal-input-number" type="number" id="parent" name="parent-number" min="1" max="100"
+                  value="2" required>
+                <input class="plus" type="button" value="">
+                <label class="children-label" for="children">Дети:</label>
+                <div class="tooltip">
+                  <span class="i">i</span>
+                  <div class="triangle">
+                    <span class="info">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
+                      Дети до 6 лет размещаются бесплатно.</span>
+                  </div>
+                </div>
+                <input class="minus" type="button" value="">
+                <input class="modal-input-number" type="number" id="children" name="children-number" min="0" max="100"
+                  value="2">
+                <input class="plus" type="button" value="">
+              </form>
+            </li>
+            <li class="modal-item">
+              <button class="modal-button" type="submit">Найти</button>
+            </li>
+          </ul>
+        </section>
+      </div>
     </div>
   </body>
 
