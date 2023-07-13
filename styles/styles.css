@@ -35,6 +35,7 @@ body {
   background-color: rgba(255, 255, 255, 1);
   margin: 0 auto;
   width: 1200px;
+  box-shadow: 0 0 15 0 rgba(0, 0, 0, 0.20);
 }
 
 .visually-hidden {
@@ -97,6 +98,8 @@ body {
   background-repeat: no-repeat;
   display:block;
   cursor:pointer;
+  border-color: transparent;
+  background-color: #ffffff;
 }
 
 .navigation-link-favourites {
@@ -129,16 +132,14 @@ body {
   background: rgba(117, 97, 87, 1);
   border-radius: 4px;
   color: #ffffff;
+  border-color: transparent;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
-  padding: 8px 34px;
   margin-bottom: 14px;
-  text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   margin-left: 10px;
-  display: block;
   margin-top: 14px;
   cursor:pointer;
 }
@@ -490,7 +491,6 @@ body {
   grid-template-columns: 24px 24px 24px;
   gap: 10px;
   padding-inline-start: 0;
-
 }
 
 .contact-phone {
@@ -504,6 +504,17 @@ body {
   cursor:pointer;
 }
 
+.contact-phone:hover {
+  color: rgba(117, 97, 87, 1);
+}
+.contact-phone:focus {
+  color: rgba(117, 97, 87, 1);
+}
+.contact-phone:active {
+  color: rgba(117, 97, 87, 1);
+  opacity: 0.6;
+}
+
 .social-list-vk {
   display: block;
   background-image: url("../images/icons/vk.svg");
@@ -512,6 +523,19 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   cursor:pointer;
+  opacity:0.8;
+}
+
+.social-list-vk:hover {
+  opacity: 1;
+}
+
+.social-list-vk:focus {
+  opacity: 1;
+}
+
+.social-list-vk:active {
+  opacity: 0.6;
 }
 
 .social-list-telegram {
@@ -522,6 +546,19 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   cursor:pointer;
+  opacity:0.8;
+}
+
+.social-list-telegram:hover {
+  opacity: 1;
+}
+
+.social-list-telegram:focus {
+  opacity: 1;
+}
+
+.social-list-telegram:active {
+  opacity: 0.6;
 }
 
 .social-list-youtube {
@@ -532,7 +569,28 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   cursor:pointer;
+  opacity:0.8;
 }
+
+.social-list-youtube:hover {
+  opacity: 1;
+}
+
+.social-list-youtube:focus {
+  opacity: 1;
+}
+
+.social-list-youtube:active {
+  opacity: 0.6;
+}
+
+.html-logotype {
+  width:115px;
+  height:33px;
+  fill: black;
+
+}
+
 
 
 
@@ -574,20 +632,20 @@ body {
   flex-direction: column;
 }
 
-.breadcrubs {
+.breadcrumbs {
   list-style-type: none;
   display: flex;
   padding-left: 70px;
 }
 
-.bredcrubs-text {
+.bredcrumbs-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   text-align: left;
 }
 
-.bredcrubs-house {
+.bredcrumbs-house {
   display: block;
   background-image: url("../images/icons/bred-house.svg");
   width: 12px;
@@ -598,7 +656,7 @@ body {
   cursor:pointer;
 }
 
-.bredcrubs-house::after {
+.bredcrumbs-house::after {
   content:url("../images/icons/bred-arrow.svg");
   display: block;
   width: 8px;
@@ -1191,12 +1249,12 @@ body {
 }
 
 .pagination-a {
-  padding-left: 29px;
   font-size: 22px;
-  padding-right: 29px;
-  margin-top: 20px;
   line-height: 26px;
   font-weight: 400;
+  padding-left:21px;
+  padding-right:29px;
+  padding-top: 20px;
 }
 
 .pag-active {
@@ -1298,12 +1356,12 @@ body {
   background: url("../images/icons/modal-date.svg") no-repeat center;
 }
 
-.date-start {
-  padding-right: 24px;
+.date-start-text {
+  margin-right:24px ;
 }
 
-.date-end {
-  padding-right: 18px;
+.date-end-text {
+  margin-right: 18px;
 }
 
 .modal-input-number {
@@ -1357,9 +1415,21 @@ input::-webkit-inner-spin-button {
   width: 40px;
   height: 48px;
   background-color: rgba(242, 242, 242, 1);
-  padding-left: 0;
+  padding:0;
   border-radius: 4px;
+  margin: 0;
 
+}
+
+.modal-form {
+  display: inline-flex;
+  align-items: center;
+}
+
+.plus-minus-button {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
 }
 
 .minus {
@@ -1370,8 +1440,9 @@ input::-webkit-inner-spin-button {
   width: 40px;
   height: 48px;
   background-color: rgba(242, 242, 242, 1);
-  padding-left: 0;
+  padding:0;
   border-radius: 4px;
+  margin: 0;
 }
 
 .window {
@@ -1418,7 +1489,7 @@ input::-webkit-inner-spin-button {
   margin-left: 2px;
 }
 
-.date-error1 {
+.date-error {
   display: inline-block;
   color: rgba(255, 87, 87, 1);
   padding-left: 162px;
@@ -1428,7 +1499,7 @@ input::-webkit-inner-spin-button {
   margin-bottom: 23px;
 }
 
-.date-error2 {
+.date-sucsses {
   display: inline-block;
   padding-left: 162px;
   font-size: 16px;
@@ -1438,5 +1509,5 @@ input::-webkit-inner-spin-button {
 }
 
 .modal-container-close {
-  display: none;
+  display:none;
 }
