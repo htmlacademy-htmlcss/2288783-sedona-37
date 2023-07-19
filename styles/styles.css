@@ -166,7 +166,7 @@ body {
 }
 
 .navigation-link-button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   width: 160px;
   height: 36px;
   background: rgba(117, 97, 87, 1);
@@ -451,7 +451,7 @@ body {
 }
 
 .hotel-search-button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -626,7 +626,7 @@ body {
 
 
 .contact-phone {
-  font-style: "PT Sans";
+  font-style: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
@@ -979,7 +979,7 @@ body {
 }
 
 .control-input-min {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   width: 143px;
   height: 48px;
   border-radius: 4px 0 0 4px;
@@ -997,7 +997,7 @@ body {
 }
 
 .control-input-max {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   width: 143px;
   height: 48px;
   border-radius: 0 4px 4px 0;
@@ -1075,7 +1075,7 @@ body {
 }
 
 .price-button-acept {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   color: rgba(255, 255, 255, 1);
   font-weight: 700;
   font-size: 16px;
@@ -1109,7 +1109,7 @@ body {
 }
 
 .price-button-reset {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   color: rgba(255, 255, 255, 1);
   font-weight: 700;
   font-size: 16px;
@@ -1169,7 +1169,7 @@ body {
 }
 
 .vatiation-sorting {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   width: 292px;
   height: 49px;
   border-radius: 4px;
@@ -1297,7 +1297,7 @@ body {
 }
 
 .hotel-button-more {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   grid-column-start: 1;
   grid-column-end: 2;
   align-self: center;
@@ -1335,7 +1335,7 @@ body {
 }
 
 .hotel-button-favorites {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   color: rgba(255, 255, 255, 1);
   font-weight: 700;
   font-size: 16px;
@@ -1373,7 +1373,7 @@ body {
 }
 
 .hotel-button-active {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   grid-column-start: 2;
   grid-column-end: 3;
   align-self: center;
@@ -1632,7 +1632,7 @@ body {
 }
 
 .modal-input-date {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   width: 440px;
   height: 48px;
   border-radius: 4px;
@@ -1674,7 +1674,7 @@ body {
   line-height: 20px;
   font-weight: 700;
   text-align: center;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
 }
 
 .parent-label {
