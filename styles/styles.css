@@ -76,6 +76,7 @@ body {
   display: flex;
   padding-inline-start:0;
   padding-left: 174px;
+  flex-wrap: wrap;
 }
 
 .navigation-user {
@@ -92,6 +93,18 @@ body {
   height: 70px;
 }
 
+.navigation-logo:hover {
+  opacity: 0.8;
+}
+
+.navigation-logo:focus {
+  opacity: 0.8;
+}
+
+.navigation-logo:active {
+  opacity: 0.6;
+}
+
 .navigation-link-search {
   background-image: url("../images/icons/search.svg");
   width: 44px;
@@ -102,6 +115,18 @@ body {
   cursor:pointer;
   border-color: transparent;
   background-color: #ffffff;
+}
+
+.navigation-link-search:hover {
+  opacity: 0.6;
+}
+
+.navigation-link-search:focus {
+  opacity: 0.6;
+}
+
+.navigation-link-search:active {
+  opacity: 0.4;
 }
 
 .navigation-link-favourites {
@@ -115,6 +140,18 @@ body {
   padding-left: 22px;
   padding-top: 10px;
   cursor:pointer;
+}
+
+.navigation-link-favourites:hover {
+  opacity: 0.6;
+}
+
+.navigation-link-favourites:focus {
+  opacity: 0.6;
+}
+
+.navigation-link-favourites:active {
+  opacity: 0.4;
 }
 
 .number {
@@ -244,7 +281,7 @@ body {
 }
 
 .information-block-services {
-  padding-top: 64px;
+  padding-top: 63px;
   padding-bottom: 64px;
 }
 
@@ -259,6 +296,11 @@ body {
   margin: 0;
 }
 
+.advantages-image {
+  width: 800px;
+  min-height: 385px;
+}
+
 .advantages-item {
   background-color: rgba(131, 179, 211, 0.2);
   color: #000000;
@@ -268,7 +310,8 @@ body {
 
 .advantages-item.with-image {
   display: flex;
-  width: 100%;
+  flex-wrap: wrap;
+  width: 1200px;
   background-color: rgba(130, 179, 211, 1);
   color: #FFFFFF;
   min-height: 385px;
@@ -283,9 +326,8 @@ body {
 }
 
 .advantage-description {
+  width: 230px;
   margin: 0 auto;
-  padding-left: 85px;
-  padding-right: 85px;
   padding-top: 82px;
 }
 
@@ -371,7 +413,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-width: 400px;
+  width: 400px;
   background-color: rgba(131, 179, 211, 0.12);
   padding-top: 80px;
   padding-bottom: 80px;
@@ -454,7 +496,7 @@ body {
   background-color: blue;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 96px;
+  padding-top: 98px;
   padding-bottom: 104px;
 }
 
@@ -530,7 +572,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 104px;
+  padding-top: 109px;
   padding-bottom: 104px;
 }
 
@@ -566,6 +608,8 @@ body {
 
 .footer-social-list {
   display: flex;
+  flex-wrap: wrap;
+  width: 160px;
   list-style-type: none;
   margin: 0;
   padding-left: 15px;
@@ -768,7 +812,7 @@ body {
   height: 20px;
   background-repeat: no-repeat;
   background-position: center;
-  padding-left: 20px;
+  padding-left: 22px;
 }
 
 .infrastructure-title {
@@ -776,6 +820,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   padding-bottom: 32px;
+  padding-left: 0;
 }
 
 .infrastructure {
@@ -918,6 +963,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   padding-bottom: 32px;
+  padding-left: 0;
 }
 
 .housetype-item {
@@ -1103,8 +1149,8 @@ body {
   align-items: center;
   padding-left: 70px;
   padding-right: 70px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 44px;
+  padding-bottom: 36px;
 }
 
 .sorting-title {
@@ -1118,6 +1164,8 @@ body {
 .view {
   list-style-type: none;
   display: flex;
+  padding-left: 61px;
+  flex-wrap: wrap;
 }
 
 .vatiation-sorting {
@@ -1130,8 +1178,10 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  appearance: none;
+  background: url("../images/icons/select.svg") no-repeat right;
+  background-position-x: calc(100% - 18px);
 }
-
 .vatiation-sorting:hover {
   border: 2px solid rgba(104, 162, 202, 1);
 }
@@ -1143,13 +1193,16 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.view-item {
+  padding-left:8px;
+}
+
 .icon {
   width: 48px;
   height: 48px;
   padding: 12px 14px 12px 14px;
   border: 2px solid rgba(229, 229, 229, 1);
   border-radius: 4px;
-  margin-left: 14px;
 }
 
 .icon:hover {
@@ -1418,7 +1471,7 @@ body {
 .pagination {
   padding-left: 70px;
   padding-right: 70px;
-  padding-top: 20px;
+  padding-top: 17px;
   padding-bottom:45px;
 }
 .pagination::before {
@@ -1512,6 +1565,8 @@ body {
   position: relative;
   margin: auto;
   padding: 40px;
+  padding-top:60px;
+  padding-bottom:60px;
   background-color: #ffffff;
 }
 
@@ -1524,7 +1579,7 @@ body {
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 64px;
+  top: 61px;
   left: 613px;
   width: 52px;
   height: 52px;
@@ -1558,6 +1613,7 @@ body {
   color: #000000;
   text-transform: uppercase;
   padding-bottom: 64px;
+  margin: 0;
 }
 
 .modal-list {
@@ -1576,16 +1632,19 @@ body {
 }
 
 .modal-input-date {
+  font-family: "PT Sans";
   width: 440px;
   height: 48px;
   border-radius: 4px;
   padding: 12px 20px 12px 20px;
   border-color: transparent;
-  background-color: rgba(242, 242, 242, 1);
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  position: relative;
+  background: url("../images/icons/modal-date.svg") no-repeat right ;
+  background-color:rgba(242, 242, 242, 1) ;
+  background-position-x: calc(100% - 18px);
+
 }
 
 .modal-input-date:hover {
@@ -1598,18 +1657,12 @@ body {
   outline: none;
 }
 
-.modal-input-date::-webkit-calendar-picker-indicator {
-  color: transparent;
-  opacity: 40%;
-  background: url("../images/icons/modal-date.svg") no-repeat center;
-}
-
 .date-start-text {
-  margin-right:24px ;
+  margin-right:16px ;
 }
 
 .date-end-text {
-  margin-right: 18px;
+  margin-right: 11px;
 }
 
 .modal-input-number {
@@ -1621,15 +1674,16 @@ body {
   line-height: 20px;
   font-weight: 700;
   text-align: center;
+  font-family: "PT Sans";
 }
 
 .parent-label {
-  padding-right: 49px;
+  padding-right: 46px;
 
 }
 
 .children-label {
-  padding-left: 108px;
+  padding-left: 88px;
   padding-right: 10px;
 }
 
@@ -1766,7 +1820,7 @@ input::-webkit-inner-spin-button {
   color: #ffffff;
   text-align: center;
   padding-top: 2px;
-  margin-right: 26px;
+  margin-right: 46px;
 }
 
 .info {
@@ -1800,7 +1854,7 @@ input::-webkit-inner-spin-button {
 .date-error {
   display: inline-block;
   color: rgba(255, 87, 87, 1);
-  padding-left: 162px;
+  padding-left: 158px;
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
@@ -1809,7 +1863,7 @@ input::-webkit-inner-spin-button {
 
 .date-sucsses {
   display: inline-block;
-  padding-left: 162px;
+  padding-left: 158px;
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
