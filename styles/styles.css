@@ -69,14 +69,15 @@ body {
   padding-left: 10px;
   padding-right: 22px;
   white-space: nowrap;
+  height: 64px;
 }
 
 .navigation-list {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   padding-inline-start:0;
   padding-left: 174px;
-  flex-wrap: wrap;
 }
 
 .navigation-user {
@@ -276,8 +277,8 @@ body {
 }
 
 .information-block-advantages {
-  padding-top: 69px;
-  padding-bottom: 85px;
+  padding-top: 67px;
+  padding-bottom: 87px;
 }
 
 .information-block-services {
@@ -297,8 +298,7 @@ body {
 }
 
 .advantages-image {
-  width: 800px;
-  min-height: 385px;
+  object-fit: cover;
 }
 
 .advantages-item {
@@ -537,7 +537,14 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+}
 
+.mail-input:hover {
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.mail-input:focus {
+  background-color: rgba(242, 242, 242, 0.8);
 }
 
 .button-mail {
@@ -1018,6 +1025,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   padding-bottom: 32px;
+  padding-left: 0;
 }
 
 .form-price {
@@ -1149,8 +1157,8 @@ body {
   align-items: center;
   padding-left: 70px;
   padding-right: 70px;
-  padding-top: 44px;
-  padding-bottom: 36px;
+  padding-top: 25px;
+  padding-bottom: 11px;
 }
 
 .sorting-title {
@@ -1159,6 +1167,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   padding-right:200px;
+  white-space: nowrap;
 }
 
 .view {
@@ -1166,6 +1175,7 @@ body {
   display: flex;
   padding-left: 61px;
   flex-wrap: wrap;
+  padding-top: 8px;
 }
 
 .vatiation-sorting {
@@ -1194,15 +1204,16 @@ body {
 }
 
 .view-item {
-  padding-left:8px;
+  margin-left:8px;
+  padding: 12px 14px 12px 14px;
+  border: 2px solid rgba(229, 229, 229, 1);
+  border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 .icon {
   width: 48px;
   height: 48px;
-  padding: 12px 14px 12px 14px;
-  border: 2px solid rgba(229, 229, 229, 1);
-  border-radius: 4px;
 }
 
 .icon:hover {
@@ -1277,8 +1288,8 @@ body {
 
 .price-input-min {
   position: absolute;
-  padding-left: 110px;
-  padding-top: 10px;
+  padding-left: 106px;
+  padding-top: 13px;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -1288,8 +1299,8 @@ body {
 
 .price-input-max {
   position: absolute;
-  padding-left: 110px;
-  padding-top: 10px;
+  padding-left: 103px;
+  padding-top: 13px;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -1520,9 +1531,9 @@ body {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
-  padding-left:21px;
+  padding-left:22px;
   padding-right:29px;
-  padding-top: 20px;
+  padding-top: 18px;
 }
 
 .pag-active {
