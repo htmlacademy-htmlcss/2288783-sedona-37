@@ -304,6 +304,7 @@ body {
 
 .advantages-image {
   object-fit: cover;
+  min-height: 385px;
 }
 
 .advantages-item {
