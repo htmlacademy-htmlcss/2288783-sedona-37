@@ -76,8 +76,11 @@ body {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  align-items: stretch;
   padding-inline-start:0;
   padding-left: 174px;
+  margin: 0;
+  padding-top: 18px;
 }
 
 .navigation-user {
@@ -203,6 +206,8 @@ body {
   background: rgba(229, 229, 229, 1);
 }
 
+
+
 .navigation-link-current {
   position: relative;
 
@@ -212,10 +217,10 @@ body {
   content: "";
   position: absolute;
   background: rgba(117, 98, 87, 1);
-  left: 0;
-  bottom: -22px;
+  left: 10px;
+  right: 20px;
+  bottom: 0;
   height: 2px;
-  width: 100%;
 }
 
 
@@ -643,7 +648,7 @@ body {
   text-transform: uppercase;
   cursor:pointer;
   margin: 0;
-  padding-right:8px;
+  padding-right:12px;
 
 }
 
@@ -1184,7 +1189,7 @@ body {
   height: 49px;
   border-radius: 4px;
   border: 2px solid rgba(229, 229, 229, 1);
-  padding: 14px 20px 14px 20px;
+  padding: 11px 20px 12px 20px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -1204,6 +1209,8 @@ body {
 }
 
 .view-item {
+  width: 48px;
+  height: 48px;
   margin-left:8px;
   padding: 12px 14px 12px 14px;
   border: 2px solid rgba(229, 229, 229, 1);
@@ -1211,20 +1218,15 @@ body {
   margin-bottom: 8px;
 }
 
-.icon {
-  width: 48px;
-  height: 48px;
-}
-
-.icon:hover {
+.view-item:hover {
   border: 2px solid rgba(0, 0, 0, 1);
 }
 
-.icon:focus {
+.view-item:focus {
   border: 2px solid rgba(104, 162, 202, 1);
 }
 
-.icon:active {
+.view-item:active {
   border: 2px solid rgba(0, 0, 0, 1);
 }
 
