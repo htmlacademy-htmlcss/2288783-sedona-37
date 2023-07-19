@@ -533,7 +533,7 @@ body {
   padding-top: 14px;
   padding-bottom: 14px;
   background-color: rgba(242, 242, 242, 1);
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -541,7 +541,7 @@ body {
 }
 
 .button-mail {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   background-color: rgba(130, 179, 211, 1);
   border-radius: 0 4px 4px 0;
   border-color: transparent;
