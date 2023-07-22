@@ -50,10 +50,12 @@
             <h1 class="filter-title">Гостиницы Седоны</h1>
             <ol class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="bredcrumbs-house" href="index.html"></a>
+                <a class="breadcrumbs-house" href="index.html">
+                  <span class="visually-hidden">Главная</span>
+                </a>
               </li>
               <li class="breadcrumbs-item">
-                <span class="bredcrumbs-text">Гостиницы</span>
+                <span class="breadcrumbs-text">Гостиницы</span>
               </li>
             </ol>
           </div>
@@ -137,7 +139,7 @@
               </div>
             </fieldset>
             <div class="price-buttons">
-              <button class="price-button-acept" type="submit">Применить</button>
+              <button class="price-button-accept" type="submit">Применить</button>
               <button class="price-button-reset" type="reset">Сбросить</button>
             </div>
           </form>
@@ -145,26 +147,23 @@
         <section class="hotels">
           <div class="sorting">
             <span class="sorting-title"> Найдено гостиниц: 38 </span>
-            <select class="vatiation-sorting" aria-label="Сортировка">
+            <select class="variation-sorting" aria-label="Сортировка">
               <option value="cheap">Сначала дешевые</option>
               <option value="poor">Сначала дорогие</option>
             </select>
             <ul class="view">
-              <li class="view-item">
+              <li class="view-item icon-table">
                 <a class="icon" href="#">
-                  <img src="images/icons/view-table.svg" width="16" height="14" alt="Таблица.">
                   <span class="visually-hidden">Таблица</span>
                 </a>
               </li>
-              <li class="view-item">
+              <li class="view-item icon-icon">
                 <a class="icon" href="#">
-                  <img src="images/icons/view-icons.svg" width="16" height="14" alt="Крупные значки.">
                   <span class="visually-hidden">Крупные значки</span>
                 </a>
               </li>
-              <li class="view-item">
-                <a class="icon" href="#">
-                  <img src="images/icons/view-list.svg" width="16" height="14" alt="Список.">
+              <li class="view-item icon-list">
+                <a class="icon " href="#">
                   <span class="visually-hidden">Список</span>
                 </a>
               </li>
@@ -181,12 +180,7 @@
               <span class="hotel-cart-price">От 4000 ₽</span>
               <button class="button-small hotel-button-more" type="button">подробнее</button>
               <button class="button-small hotel-button-favorites" type="button">в избранное</button>
-              <p class="hotel-stars">
-                <span class="star"></span>
-                <span class="star"></span>
-                <span class="star"></span>
-                <span class="star"></span>
-              </p>
+              <div class="hotel-stars amara-star"></div>
               <span class="hotel-rating">Рейтинг: 8,5</span>
             </li>
             <li class="hotel-list-item">
@@ -199,12 +193,7 @@
               <span class="hotel-cart-price">От 5000 ₽</span>
               <button class="hotel-button-more" type="button">подробнее</button>
               <button class="hotel-button-favorites hotel-button-active" type="button">в избранном</button>
-              <p class="hotel-stars">
-                <span class="star"></span>
-                <span class="star"></span>
-                <span class="star"></span>
-                <span class="star"></span>
-              </p>
+              <div class="hotel-stars diablo-star"></div>
               <span class="hotel-rating">Рейтинг: 9,2</span>
             </li>
             <li class="hotel-list-item">
@@ -217,11 +206,7 @@
               <span class="hotel-cart-price">От 2500 ₽</span>
               <button class="button-small hotel-button-more" type="button">подробнее</button>
               <button class="button-small hotel-button-favorites" type="button">в избранное</button>
-              <p class="hotel-stars">
-                <span class="star"></span>
-                <span class="star"></span>
-                <span class="star"></span>
-              </p>
+              <div class="hotel-stars desert-star"></div>
               <span class="hotel-rating">Рейтинг: 6,9</span>
             </li>
             <li class="hotel-list-item">
@@ -234,10 +219,7 @@
               <span class="hotel-cart-price">От 1500 ₽</span>
               <button class="button-small hotel-button-more" type="button">подробнее</button>
               <button class="button-small hotel-button-favorites" type="button">в избранное</button>
-              <p class="hotel-stars">
-                <span class="star"></span>
-                <span class="star"></span>
-              </p>
+              <div class="hotel-stars greentree-star"></div>
               <span class="hotel-rating">Рейтинг: 5,0</span>
             </li>
           </ul>
