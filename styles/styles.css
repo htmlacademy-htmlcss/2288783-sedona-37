@@ -859,7 +859,7 @@ body {
   font-size: 16px;
   line-height: 21px;
   text-align: left;
-  padding-left: 10px;
+
 }
 
 .breadcrumbs-house {
@@ -869,7 +869,7 @@ body {
   height: 21px;
   background-repeat: no-repeat;
   background-position: center;
-  margin-right: 10px;
+
   cursor:pointer;
 }
 
@@ -882,6 +882,8 @@ body {
   display: block;
   width: 8px;
   height: 20px;
+  margin-left:10px;
+  margin-right:10px;
 }
 
 .infrastructure-title {
@@ -1349,6 +1351,7 @@ input::-moz-inner-spin-button {
   padding: 20px;
   display: grid;
   grid-template-columns: 140px 140px;
+  grid-template-rows: 1fr auto auto auto auto;
   row-gap: 14px;
   column-gap: 20px;
 }
@@ -1358,6 +1361,7 @@ input::-moz-inner-spin-button {
   grid-column-end: 3;
   text-decoration: none;
   color: black;
+
 }
 
 .hotel-cart-title {
@@ -1451,6 +1455,7 @@ input::-moz-inner-spin-button {
   font-size: 16px;
   line-height: 20px;
   display: table;
+  align-self: center;
   text-transform: uppercase;
   text-align: center;
   background-color: rgba(130, 179, 211, 1);
