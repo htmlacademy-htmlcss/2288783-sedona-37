@@ -100,18 +100,15 @@
             <p class="information-text-services">Опытный персонал и качественное обслуживание!</p>
           </div>
           <ul class="services-list">
-            <li class="services-item">
-              <img class="service-image" src="images/service/service-house.svg" width="75" height="72" alt="Жилье.">
+            <li class="services-item service-house">
               <h3 class="services-title">Жильё</h3>
               <p class="services-text">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
             </li>
-            <li class="services-item">
-              <img class="service-image" src="images/service/service-food.svg" width="74" height="70" alt="Еда.">
+            <li class="services-item service-food">
               <h3 class="services-title">Еда</h3>
               <p class="services-text">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
             </li>
-            <li class="services-item">
-              <img class="service-image" src="images/service/service-gift.svg" width="64" height="76" alt="Сувениры.">
+            <li class="services-item service-gift">
               <h3 class="services-title">Сувениры</h3>
               <p class="services-text">Не только китайского,<br>но и настоящего местного<br>производства!</p>
             </li>
@@ -142,7 +139,7 @@
           </li>
           <li class="footer-social-item">
             <a class="social-list-telegram footer-social-link" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Telegram</span>
+             <span class="visually-hidden">Telegram</span>
             </a>
           </li>
           <li class="footer-social-item">
@@ -151,7 +148,9 @@
             </a>
           </li>
         </ul>
-        <a class="contact-phone" href="#">+7 (812) 812-12-12</a>
+        <div class="contact-information">
+          <a class="contact-phone" href="#">+7 (812) 812-12-12</a>
+        </div>
         <a class="html-logo" href="https://htmlacademy.ru/">
           <svg class="html-logotype" xmlns="http://www.w3.org/2000/svg" width="115" height="34" viewBox="0 0 115 34"
             fill="none">
@@ -196,16 +195,17 @@
             <li class="modal-item">
               <label class="date-start" for="start">
                 <span class="date-start-text">Дата Заезда:</span>
-                <input class="modal-input-date" type="text" id="start" name="trip-start" value="27 апреля 2020"
-                  required>
+                <input class="modal-input-date" type="text" id="start" name="trip-start" placeholder="Дата Заезда:"
+                  value="27 апреля 2020" required>
                 <span class="date-error">Мы не можем отправить вас в прошлое</span>
               </label>
             </li>
             <li class="modal-item">
               <label class="date-end" for="end">
                 <span class="date-end-text">Дата Выезда:</span>
-                <input class="modal-input-date" type="text" id="end" name="trip-end" value="1 сентября 2023" required>
-                <span class="date-sucsses">На эти даты есть свободные номера. Пока есть.</span>
+                <input class="modal-input-date" type="text" id="end" name="trip-end" placeholder="Дата Выезда:"
+                  value="1 сентября 2023" required>
+                <span class="date-success">На эти даты есть свободные номера. Пока есть.</span>
               </label>
             </li>
             <li class="modal-item modal-form">
@@ -216,6 +216,7 @@
                     fill="none">
                     <path d="M0 0L0 2L14 2V0L0 0Z" />
                   </svg>
+                  <span class="visually-hidden">-</span>
                 </button>
                 <input class="modal-input-number" type="number" id="parent" name="parent-number" min="1" max="100"
                   value="2" required>
@@ -224,11 +225,12 @@
                     fill="none">
                     <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
                   </svg>
+                  <span class="visually-hidden">+</span>
                 </button>
               </div>
               <label class="children-label" for="children">Дети:</label>
               <div class="tooltip">
-                <span class="i">i</span>
+                <button class="i" type="button">i</button>
                 <div class="triangle">
                   <span class="info">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
                     Дети до 6 лет размещаются бесплатно.</span>
@@ -240,14 +242,16 @@
                     fill="none">
                     <path d="M0 0L0 2L14 2V0L0 0Z" />
                   </svg>
+                  <span class="visually-hidden">-</span>
                 </button>
                 <input class="modal-input-number" type="number" id="children" name="children-number" min="0" max="100"
-                  value="2">
+                  value="2" required>
                 <button class="plus" type="button">
                   <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
                     fill="none">
                     <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
                   </svg>
+                  <span class="visually-hidden">+</span>
                 </button>
               </div>
             </li>
