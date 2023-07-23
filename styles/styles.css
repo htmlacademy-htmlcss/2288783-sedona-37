@@ -72,6 +72,17 @@ body {
   height: 64px;
 }
 
+.navigation-link:hover {
+  opacity: 0.8;
+}
+.navigation-link:focus {
+  opacity: 0.8;
+}
+.navigation-link:active {
+  opacity: 0.6;
+}
+
+
 .navigation-list {
   list-style-type: none;
   display: flex;
