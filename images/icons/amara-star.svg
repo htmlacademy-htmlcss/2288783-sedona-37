@@ -11,6 +11,9 @@
 <g clip-path="url(#clip3_96181_449)">
 <path d="M81 10L83.1 16.5H90L84.4 20.5L86.6 27L81 23L75.4 27L77.6 20.5L72 16.5H78.9L81 10Z" fill="#83B3D3"/>
 </g>
+<g clip-path="url(#clip4_96181_449)">
+<path d="M105 10L107.1 16.5H114L108.4 20.5L110.6 27L105 23L99.4 27L101.6 20.5L96 16.5H102.9L105 10Z" fill="#83B3D3"/>
+</g>
 <defs>
 <clipPath id="clip0_96181_449">
 <rect width="18" height="17" fill="white" transform="translate(0 10)"/>
@@ -23,6 +26,9 @@
 </clipPath>
 <clipPath id="clip3_96181_449">
 <rect width="18" height="17" fill="white" transform="translate(72 10)"/>
+</clipPath>
+<clipPath id="clip4_96181_449">
+<rect width="18" height="17" fill="white" transform="translate(96 10)"/>
 </clipPath>
 </defs>
 </svg>
