@@ -465,7 +465,7 @@ body {
   justify-content: center;
   text-align: center;
   padding-bottom: 94px;
-  padding-top: 93px;
+  padding-top: 95px;
 }
 
 .hotel-search-title {
@@ -682,8 +682,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 47px;
+  width: 30px;
   height: 40px;
+  margin-right: 16px;
+}
+
+.footer-social-item:has(a:focus) {
+  outline: 2px solid black;
 }
 
 .contact-information {
@@ -719,12 +724,12 @@ body {
 
 .social-list-vk {
   display: block;
-  mask-image: url("../images/icons/vk.svg");
   -webkit-mask-image: url("../images/icons/vk.svg");
-  mask-repeat: no-repeat;
+  mask-image: url("../images/icons/vk.svg");
   -webkit-mask-repeat:no-repeat;
-  mask-size: 100%;
+  mask-repeat: no-repeat;
   -webkit-mask-size:100%;
+  mask-size: 100%;
   width: 24px;
   height: 14px;
   background-color: rgba(131, 179, 211, 1);
@@ -745,12 +750,12 @@ body {
 
 .social-list-telegram {
   display: block;
-  mask-image: url("../images/icons/telegram.svg");
   -webkit-mask-image: url("../images/icons/telegram.svg");
-  mask-repeat: no-repeat;
+  mask-image: url("../images/icons/telegram.svg");
   -webkit-mask-repeat:no-repeat;
+  mask-repeat: no-repeat;
+   -webkit-mask-size:100%;
   mask-size: 100%;
-  -webkit-mask-size:100%;
   width: 18px;
   height: 16px;
   background-color: rgba(131, 179, 211, 1);
@@ -770,12 +775,12 @@ body {
 
 .social-list-youtube {
   display: block;
-  mask-image: url("../images/icons/youtube.svg");
   -webkit-mask-image: url("../images/icons/youtube.svg");
-  mask-repeat: no-repeat;
+  mask-image: url("../images/icons/youtube.svg");
   -webkit-mask-repeat:no-repeat;
-  mask-size: 100%;
+  mask-repeat: no-repeat;
   -webkit-mask-size:100%;
+  mask-size: 100%;
   width: 22px;
   height: 17px;
   background-color: rgba(131, 179, 211, 1);
@@ -797,6 +802,7 @@ body {
   width:115px;
   height:33px;
   fill: black;
+  margin-top: 5px;
 }
 
 .html-logotype:hover {
@@ -1319,11 +1325,28 @@ input::-moz-inner-spin-button {
   border: 2px solid rgba(0, 0, 0, 1);
 }
 
+.view-icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.view-icon:focus {
+  outline: none;
+}
+
+.view-item:has(.view-icon:focus) {
+  border: 2px solid #68A2CA;
+}
+
+.view-item-current {
+  border: 2px solid rgba(0, 0, 0, 1);
+}
+
 .icon-table {
   background-image: url("../images/icons/view-table.svg");
   background-repeat: no-repeat;
   background-position: center;
-  border-color: rgba(0, 0, 0, 1);
 }
 
 .icon-icon {
@@ -1564,32 +1587,29 @@ input::-moz-inner-spin-button {
   grid-column-end: 2;
   margin: 0;
   padding-top: 10px;
+  background-image: url("../images/icons/stars.svg");
 }
 
-.amara-star {
-  background-image: url("../images/icons/amara-star.svg");
-  width: 140px;
-  height: 37px;
-  display: block;
+.one-star {
+  width: 23px;
 }
-.diablo-star {
-  background-image: url("../images/icons/amara-star.svg");
-  width: 140px;
-  height: 37px;
-  display: block;
+
+.two-star {
+  width: 46px;
 }
-.desert-star {
-  background-image: url("../images/icons/desert-star.svg");
-  width: 140px;
-  height: 37px;
-  display: block;
+
+.three-star {
+  width: 69px;
 }
-.greentree-star {
-  background-image: url("../images/icons/greentree-star.svg");
-  width: 140px;
-  height: 37px;
-  display: block;
+
+.four-star {
+  width: 90px;
 }
+
+.five-star {
+  width: 115px;
+}
+
 
 .hotel-rating {
   grid-column-start: 2;
@@ -1634,11 +1654,10 @@ input::-moz-inner-spin-button {
 
 .pagination-link-button {
   display: block;
-  width: 60px;
+  min-width: 60px;
   min-height: 60px;
-  word-break: break-all;
   text-align: center;
-  padding-top: 12px;
+  padding: 12px 18px 12px 18px;
   line-height: 36px;
   font-weight: 700;
   color: #ffffff;
@@ -1973,10 +1992,6 @@ input::-webkit-inner-spin-button {
 
 .info {
   display: none;
-}
-
-.tooltip:hover .info {
-  display: inline-block;
   position: absolute;
   width: 256px;
   text-align: left;
@@ -1987,6 +2002,24 @@ input::-webkit-inner-spin-button {
   margin-top: 10px;
   margin-left: -120px;
   box-shadow: rgba(0, 0, 0, 0.3);
+}
+
+.tooltip:hover .info {
+  display: inline-block;
+}
+
+.i:focus + .triangle .info {
+  display: inline-block;
+}
+
+.i:focus + .triangle {
+  position: absolute;
+  content: "";
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid rgba(51, 51, 51, 1);
+  margin-top: 5px;
+  margin-left: 3px;
 }
 
 .tooltip:hover .triangle {
