@@ -724,12 +724,12 @@ body {
 
 .social-list-vk {
   display: block;
-  mask-image: url("../images/icons/vk.svg");
   -webkit-mask-image: url("../images/icons/vk.svg");
-  mask-repeat: no-repeat;
+  mask-image: url("../images/icons/vk.svg");
   -webkit-mask-repeat:no-repeat;
-  mask-size: 100%;
+  mask-repeat: no-repeat;
   -webkit-mask-size:100%;
+  mask-size: 100%;
   width: 24px;
   height: 14px;
   background-color: rgba(131, 179, 211, 1);
@@ -750,12 +750,12 @@ body {
 
 .social-list-telegram {
   display: block;
-  mask-image: url("../images/icons/telegram.svg");
   -webkit-mask-image: url("../images/icons/telegram.svg");
-  mask-repeat: no-repeat;
+  mask-image: url("../images/icons/telegram.svg");
   -webkit-mask-repeat:no-repeat;
+  mask-repeat: no-repeat;
+   -webkit-mask-size:100%;
   mask-size: 100%;
-  -webkit-mask-size:100%;
   width: 18px;
   height: 16px;
   background-color: rgba(131, 179, 211, 1);
@@ -775,12 +775,12 @@ body {
 
 .social-list-youtube {
   display: block;
-  mask-image: url("../images/icons/youtube.svg");
   -webkit-mask-image: url("../images/icons/youtube.svg");
-  mask-repeat: no-repeat;
+  mask-image: url("../images/icons/youtube.svg");
   -webkit-mask-repeat:no-repeat;
-  mask-size: 100%;
+  mask-repeat: no-repeat;
   -webkit-mask-size:100%;
+  mask-size: 100%;
   width: 22px;
   height: 17px;
   background-color: rgba(131, 179, 211, 1);
@@ -1587,7 +1587,7 @@ input::-moz-inner-spin-button {
   grid-column-end: 2;
   margin: 0;
   padding-top: 10px;
-  background-image: url("../images/icons/amara-star.svg");
+  background-image: url("../images/icons/stars.svg");
 }
 
 .one-star {
